@@ -1,0 +1,22 @@
+name: Scan
+on: workflow_dispatch
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyarrow pandas numpy
+      - run: python scan_now.py download --days 7
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: python scan_now.py scan
+      - name: Show the report
+        if: always()
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat scan_report.txt >> "$GITHUB_STEP_SUMMARY" || echo "No report was produced" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
