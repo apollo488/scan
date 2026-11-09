@@ -1,0 +1,196 @@
+RECENT EDGE SCAN, run on 2026-11-09 15:51 UTC
+Markets with hourly data: 42, 5-minute: 42, daily: 42
+Hourly data from 2024-06-20 to 2026-11-09
+
+=== 1. HOURLY RULES, LAST 2 YEARS (every market, follow and inverted) ===
+Pass = profit after costs in all 3 time periods. 'Random' = same test on randomised prices.
+Market | rules | pass real | pass random | beat the best random
+Nasdaq | 1004 | 91 | 54 | 2
+S&P 500 | 1014 | 101 | 46 | 1
+Dow | 1016 | 85 | 52 | 2
+Russell | 978 | 57 | 46 | 0
+DAX | 408 | 21 | 24 | 0
+FTSE | 390 | 6 | 12 | 0
+Gold | 980 | 71 | 61 | 0
+Silver | 958 | 5 | 11 | 0
+Copper | 934 | 11 | 12 | 0
+Platinum | 950 | 1 | 7 | 0
+US oil | 952 | 16 | 22 | 0
+Brent | 1014 | 43 | 33 | 1
+Nat gas | 972 | 0 | 10 | 0
+Soybeans | 672 | 1 | 1 | 0
+Corn | 668 | 1 | 2 | 0
+Wheat | 646 | 1 | 4 | 0
+Coffee | 380 | 4 | 6 | 0
+Sugar | 394 | 3 | 5 | 1
+Cocoa | 402 | 6 | 6 | 3
+EURUSD | 972 | 18 | 19 | 0
+GBPUSD | 962 | 6 | 23 | 0
+USDJPY | 958 | 25 | 35 | 0
+AUDUSD | 970 | 8 | 22 | 0
+USDCAD | 972 | 23 | 15 | 0
+USDCHF | 986 | 30 | 18 | 0
+NZDUSD | 976 | 10 | 19 | 0
+EURJPY | 948 | 1 | 14 | 0
+GBPJPY | 958 | 5 | 14 | 0
+Bitcoin | 1104 | 0 | 1 | 0
+Ether | 1120 | 0 | 1 | 0
+Solana | 1120 | 1 | 1 | 0
+Nvidia | 296 | 0 | 7 | 0
+Tesla | 300 | 2 | 9 | 0
+AMD | 302 | 0 | 9 | 0
+Meta | 298 | 1 | 5 | 0
+Apple | 294 | 0 | 4 | 0
+Microsoft | 292 | 0 | 2 | 0
+Amazon | 308 | 3 | 4 | 0
+Google | 306 | 4 | 3 | 0
+MicroStrategy | 306 | 0 | 10 | 0
+Coinbase | 298 | 12 | 6 | 2
+Palantir | 300 | 0 | 4 | 0
+ALL MARKETS: pass real 673, pass random 660
+
+Rules that beat the best random result (best version of each idea):
+Coinbase long mom2z2|up hold 2h | 102 trades, win 58%, avg +0.540%, score 3.1 | £200 last 60d at max lev: £310 | last 150d half lev: £285, max lev: £391
+Cocoa short mom2z2|up hold 3h | 74 trades, win 61%, avg +1.178%, score 3.9 | £200 last 60d at max lev: £376 | last 150d half lev: £276, max lev: £315
+Dow long mom24z1|dn hold 24h | 139 trades, win 54%, avg +0.208%, score 9.2 | £200 last 60d at max lev: £323 | last 150d half lev: £231, max lev: £237
+Nasdaq long mom24z2|dn hold 24h | 41 trades, win 56%, avg +0.357%, score 6.4 | £200 last 60d at max lev: £251 | last 150d half lev: £216, max lev: £229
+Cocoa short brk8|up hold 8h | 92 trades, win 59%, avg +0.745%, score 3.2 | £200 last 60d at max lev: £308 | last 150d half lev: £458, max lev: £166
+Sugar short mom2z2|up hold 4h | 69 trades, win 51%, avg +0.242%, score 2.3 | £200 last 60d at max lev: £144 | last 150d half lev: £175, max lev: £130
+S&P 500 long mom24z0|dn hold 24h | 305 trades, win 54%, avg +0.075%, score 8.9 | £200 last 60d at max lev: £140 | last 150d half lev: £135, max lev: £64
+Brent short mom2z2|up hold 24h | 125 trades, win 58%, avg +0.858%, score 5.4 | £200 last 60d at max lev: £250 | last 150d half lev: £461, max lev: £0
+
+=== 2. NEWS DAYS, LAST 2 YEARS (hourly bars) ===
+Follow or fade the first hour after CPI, jobs report and FOMC. Costs tripled for news spreads.
+Tested combinations that made money in both halves: 36
+Market | event | action | hold hours | times | avg net | win | score | per event at max lev
+EURUSD | FOMC | follow | 2 | 16 | +0.10% | 81% | 3.9 | +3%
+EURUSD | FOMC | follow | 3 | 16 | +0.07% | 69% | 2.6 | +2%
+USDJPY | FOMC | follow | 2 | 16 | +0.05% | 75% | 2.3 | +1%
+GBPUSD | CPI | fade | 2 | 22 | +0.08% | 59% | 1.9 | +2%
+AUDUSD | CPI | fade | 8 | 22 | +0.14% | 59% | 1.7 | +3%
+AUDUSD | CPI | fade | 2 | 22 | +0.12% | 68% | 1.7 | +2%
+GBPUSD | CPI | fade | 6 | 22 | +0.09% | 59% | 1.7 | +3%
+GBPUSD | CPI | fade | 8 | 22 | +0.09% | 59% | 1.5 | +3%
+USDJPY | FOMC | follow | 1 | 16 | +0.03% | 69% | 1.5 | +1%
+AUDUSD | FOMC | follow | 2 | 16 | +0.08% | 62% | 1.4 | +2%
+Gold | FOMC | follow | 3 | 16 | +0.29% | 62% | 1.3 | +6%
+AUDUSD | CPI | fade | 1 | 22 | +0.05% | 64% | 1.3 | +1%
+US oil | CPI | follow | 8 | 22 | +0.57% | 55% | 1.3 | +6%
+AUDUSD | CPI | fade | 6 | 22 | +0.11% | 59% | 1.2 | +2%
+AUDUSD | FOMC | follow | 3 | 16 | +0.07% | 69% | 1.2 | +1%
+
+=== 3. 5-MINUTE RULES, LAST 59 DAYS (high frequency) ===
+Pass = profit after costs in both halves. Only a short period, so treat as a live check.
+Market | rules | pass real | pass random | beat the best random
+Nasdaq | 2686 | 141 | 164 | 0
+S&P 500 | 2586 | 112 | 153 | 0
+Dow | 2540 | 186 | 122 | 0
+Russell | 2528 | 78 | 105 | 0
+DAX | 1380 | 98 | 95 | 0
+FTSE | 1514 | 55 | 58 | 0
+Gold | 2434 | 190 | 211 | 0
+Silver | 2472 | 60 | 49 | 1
+Copper | 2392 | 1 | 13 | 0
+Platinum | 2490 | 16 | 12 | 0
+US oil | 2564 | 59 | 74 | 0
+Brent | 2412 | 53 | 75 | 0
+Nat gas | 2404 | 3 | 5 | 0
+Soybeans | 2318 | 0 | 1 | 0
+Corn | 2122 | 0 | 16 | 0
+Wheat | 2260 | 8 | 12 | 0
+Coffee | 1466 | 10 | 14 | 0
+Sugar | 1328 | 10 | 13 | 0
+Cocoa | 1436 | 14 | 24 | 0
+EURUSD | 2542 | 52 | 50 | 0
+GBPUSD | 2544 | 77 | 53 | 0
+USDJPY | 2576 | 84 | 66 | 0
+AUDUSD | 2688 | 73 | 56 | 0
+USDCAD | 2244 | 5 | 20 | 0
+USDCHF | 2536 | 40 | 64 | 0
+NZDUSD | 2500 | 30 | 37 | 0
+EURJPY | 2506 | 23 | 23 | 0
+GBPJPY | 2390 | 16 | 18 | 0
+Bitcoin | 2952 | 0 | 0 | 0
+Ether | 2808 | 0 | 0 | 0
+Solana | 2856 | 0 | 0 | 0
+Nvidia | 1516 | 52 | 54 | 0
+Tesla | 1542 | 292 | 110 | 0
+AMD | 1514 | 57 | 102 | 0
+Meta | 1460 | 85 | 82 | 0
+Apple | 1550 | 100 | 50 | 0
+Microsoft | 1502 | 30 | 48 | 0
+Amazon | 1476 | 103 | 51 | 7
+Google | 1492 | 44 | 48 | 0
+MicroStrategy | 1462 | 204 | 93 | 10
+Coinbase | 1384 | 56 | 81 | 5
+Palantir | 1500 | 85 | 52 | 0
+
+Best 5-minute rules right now:
+Silver NY day short mom12z3|up hold 24 bars | 9 trades, win 78%, avg +0.409%, score 7.3, £200 at max lev: £285
+Coinbase NY day long mom12z1.5|up hold 12 bars | 39 trades, win 54%, avg +0.337%, score 6.1, £200 at max lev: £318
+MicroStrategy NY day long mom6z1.5|up hold 24 bars | 39 trades, win 54%, avg +1.036%, score 5.9, £200 at max lev: £951
+MicroStrategy NY day long mom6z1|up hold 24 bars | 56 trades, win 48%, avg +0.610%, score 5.8, £200 at max lev: £542
+MicroStrategy NY open long mom3z1|up hold 24 bars | 43 trades, win 51%, avg +1.138%, score 5.8, £200 at max lev: £1191
+Coinbase NY day long mom12z1.5|up hold 24 bars | 31 trades, win 58%, avg +0.749%, score 5.8, £200 at max lev: £458
+MicroStrategy NY open long mom6z1|up hold 24 bars | 38 trades, win 53%, avg +1.137%, score 5.7, £200 at max lev: £927
+Coinbase NY day short mom12z0|dn hold 24 bars | 131 trades, win 54%, avg -0.054%, score 5.5, £200 at max lev: £65
+MicroStrategy NY day long mom6z1|up hold 12 bars | 79 trades, win 49%, avg +0.363%, score 5.4, £200 at max lev: £536
+MicroStrategy NY open long mom2z1|up hold 24 bars | 49 trades, win 49%, avg +0.818%, score 5.3, £200 at max lev: £708
+MicroStrategy NY day long mom3z1.5|up hold 24 bars | 42 trades, win 55%, avg +0.971%, score 5.2, £200 at max lev: £843
+Coinbase NY open long mom12z1.5|up hold 12 bars | 21 trades, win 48%, avg +0.347%, score 5.2, £200 at max lev: £251
+
+Did the best 5-minute rules of 2021-23 still work in the last 59 days?
+  USDJPY London long brk96|up hold 24: 40 trades, win 45%, avg -0.022%
+  Gold NY open long brk24|up hold 6: 13 trades, win 38%, avg -0.136%
+  Gold London short brk96|up hold 24: 20 trades, win 35%, avg -0.082%
+  Nasdaq NY day long brk12|up hold 24: 68 trades, win 49%, avg -0.017%
+  Nasdaq NY close long mom12z1.5|up hold 6: 10 trades, win 60%, avg +0.026%
+
+=== 4. STRONGEST MARKET, LAST 5 YEARS (daily bars) ===
+Biggest moves (price change):
+  last 1y: AMD +113%, Coinbase -55%, Brent +49%, US oil +48%, MicroStrategy -47%, Solana -47%
+  last 2y: AMD +237%, Palantir +190%, Silver +68%, Google +64%, Platinum +61%, Solana -56%
+Each day hold only the market moving hardest (either direction), after costs and 3% a year financing:
+Lookback days | 5y yearly | Sharpe | worst fall | £200 over last 12m at 3x / 5x / 10x | last 24m at 3x / 5x
+5 | -24% | -0.54 | -93% | £8 / £0 / £0 | £0 / £0
+10 | -32% | -0.63 | -96% | £0 / £0 / £0 | £0 / £0
+20 | +11% | 0.21 | -78% | £0 / £0 / £0 | £0 / £0
+60 | -4% | -0.08 | -85% | £6 / £0 / £0 | £1 / £0
+(UK retail leverage caps apply to each market. Crypto cannot be leveraged.)
+
+=== 5. THE NASDAQ RULE ON THE LAST 2 YEARS (never seen before) ===
+Cost 0.010%: 226 trades, yearly +4.1%, Sharpe +0.59
+Cost 0.015%: 226 trades, yearly +3.7%, Sharpe +0.53
+Cost 0.020%: 226 trades, yearly +3.3%, Sharpe +0.47
+Cost 0.030%: 226 trades, yearly +2.5%, Sharpe +0.36
+Halves: +10.3% then -1.1%. By year: 2024:+3.0% 2025:+4.3% 2026:+1.9%
+£200 at 0.1 lot per £200 would have ended at £336
+Nasdaq rule verdict: FAIL
+
+FLIP VERSION: first trade of the day only, with a stop (0.02% cost):
+Stop 0.25%: 181 trades, yearly -0.2%, Sharpe -0.07, halves +0.8% then -1.3%
+Stop 0.50%: 181 trades, yearly -0.6%, Sharpe -0.21, halves +0.3% then -2.1%
+From every start day in the last 2 years, stop 0.25%, did £200 reach the target before being wiped out?
+Size | time | £400 | £1000 | £2000 | wiped
+50x | 3 months | 9% | 0% | 0% | 0%
+75x | 3 months | 22% | 0% | 0% | 0%
+100x | 3 months | 28% | 2% | 0% | 9%
+150x | 3 months | 33% | 5% | 0% | 44%
+50x | 6 months | 12% | 0% | 0% | 0%
+75x | 6 months | 22% | 2% | 0% | 16%
+100x | 6 months | 25% | 4% | 0% | 49%
+150x | 6 months | 31% | 6% | 0% | 85%
+
+=== 6. PROP FIRM VERSION, LAST 2 YEARS (lookback 90 days, 0.35% stop, up to 2 trades a day) ===
+Nasdaq only at 4.4x: from 2024-04-25 to 2026-11-06
+  Average month -0.79%, worst -6.19%, best +9.23%, months up 12 of 32
+  Biggest fall -41.8% (-43.8% inside trades), lowest vs start -35.1%, total -25.4%
+  By year: 2024:+5.0% 2025:-32.3% 2026:+2.0%
+  Months: 24-04:+1.0 24-05:-0.5 24-06:-2.7 24-07:-1.8 24-08:+9.2 24-09:+0.7 24-10:-4.5 24-11:-0.3 24-12:+3.9 25-01:-3.4 25-02:-4.2 25-03:-5.5 25-04:-5.9 25-05:+1.2 25-06:-2.2 25-07:-0.8 25-08:-1.7 25-09:-1.6 25-10:-2.3 25-11:-4.4 25-12:-1.5 26-01:-5.8 26-02:+1.2 26-03:+1.9 26-04:+1.7 26-05:+2.5 26-06:+4.1 26-07:-2.3 26-08:+6.2 26-09:+3.5 26-10:-6.2 26-11:-4.9
+Nasdaq plus half S&P at 3.1x: from 2024-04-25 to 2026-11-06
+  Average month -0.51%, worst -5.82%, best +8.43%, months up 12 of 32
+  Biggest fall -26.1% (-28.2% inside trades), lowest vs start -21.6%, total -16.2%
+  By year: 2024:-0.7% 2025:-13.9% 2026:-1.6%
+  Months: 24-04:+0.7 24-05:-0.9 24-06:-2.3 24-07:-1.7 24-08:+6.3 24-09:-0.4 24-10:-3.6 24-11:-1.0 24-12:+2.2 25-01:-2.6 25-02:-2.7 25-03:-4.4 25-04:+8.4 25-05:+0.6 25-06:-2.1 25-07:-0.6 25-08:-0.9 25-09:-0.5 25-10:-3.1 25-11:-4.6 25-12:-1.4 26-01:-4.5 26-02:+1.2 26-03:+1.4 26-04:+0.8 26-05:+2.1 26-06:+3.2 26-07:-2.2 26-08:+4.8 26-09:+3.1 26-10:-5.8 26-11:-5.6
+
+All percentages before leverage unless it says max lev. Past results do not promise future ones.
